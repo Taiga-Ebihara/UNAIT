@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="UNAIT is an apparel brand based inVancouver, Canada that offers fashion for everyone who enjoys life!" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" href="./assets/images/fav.png" />
+
+<title>UNAIT</title>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- slick -->
+<link rel="stylesheet" type="text/css" href="assets/javascripts/slick/slick.css"/>
+<script type="text/javascript" src="assets/javascripts/slick/slick.min.js"></script>
+
+<!-- shuffle.js -->
+<script type="text/javascript" src="assets/javascripts/shuffle/jquery.shuffle.min.js"></script>
+
+<!-- Google Fonts Roboto -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="assets/stylesheets/bundleaace561030ff3fac503c.css" rel="stylesheet"></head>
+<body>
+<div class="l-wrap">
+  <header>
+    <div class="p-headerPC">
+      <div class="p-headerPC__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.82 24.33" width="88"><path d="M0,.93H3.06V14.7a6.91,6.91,0,0,0,1.47,4.72,5.2,5.2,0,0,0,4.15,1.67,5.53,5.53,0,0,0,4.16-1.53,6,6,0,0,0,1.49-4.34V.93h3V15A9.16,9.16,0,0,1,15,21.59a8.25,8.25,0,0,1-6.25,2.46,8.47,8.47,0,0,1-6.39-2.5C.8,19.89,0,17.43,0,14.19Z"/><path d="M21.67,0,38.23,17V.9h3.06V24.33L24.73,7.38V23.29H21.67Z"/><path d="M54.22,0,64.79,23.29h-3.2L59,17.56h-9.5l-2.57,5.73H43.73Zm0,7-3.58,8h7.2Z"/><path d="M67.55.9h3V23.29h-3Z"/><path d="M74.13.9H87.82V4H82.48V23.29h-3V4H74.13Z"/></svg>
+      </div>
+      <nav class="p-headerPC__nav">
+        <ul class="p-headerPC__navList">
+          <li class="p-headerPC__navItem">
+            <a href="#pickup" class="c-text--small">PICK UP</a>
+          </li>
+          <li class="p-headerPC__navItem">
+            <a href="#policy" class="c-text--small">OUR POLICY</a>
+          </li>
+          <li class="p-headerPC__navItem">
+            <a href="#newArrival" class="c-text--small">NEW ARRIVALS</a>
+          </li>
+          <li class="p-headerPC__navItem">
+            <a href="#access" class="c-text--small">ACCESS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="p-headerSP">
+      <div class="p-headerSP__logo">
+        <h1><svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.82 24.33" width="88"><path d="M0,.93H3.06V14.7a6.91,6.91,0,0,0,1.47,4.72,5.2,5.2,0,0,0,4.15,1.67,5.53,5.53,0,0,0,4.16-1.53,6,6,0,0,0,1.49-4.34V.93h3V15A9.16,9.16,0,0,1,15,21.59a8.25,8.25,0,0,1-6.25,2.46,8.47,8.47,0,0,1-6.39-2.5C.8,19.89,0,17.43,0,14.19Z"/><path d="M21.67,0,38.23,17V.9h3.06V24.33L24.73,7.38V23.29H21.67Z"/><path d="M54.22,0,64.79,23.29h-3.2L59,17.56h-9.5l-2.57,5.73H43.73Zm0,7-3.58,8h7.2Z"/><path d="M67.55.9h3V23.29h-3Z"/><path d="M74.13.9H87.82V4H82.48V23.29h-3V4H74.13Z"/></svg></h1>
+      </div>
+      <button class="p-headerSP__hamburger">
+        <span class="p-headerSP__hamBar"></span>
+        <span class="p-headerSP__hamBar"></span>
+        <span class="p-headerSP__hamBar"></span>
+      </button>
+      <nav class="p-headerSP__nav">
+        <ul class="p-headerSP__navList">
+          <li class="p-headerSP__navItem">
+            <a href="#pickup" class="c-text--medium">PICK UP</a>
+          </li>
+          <li class="p-headerSP__navItem">
+            <a href="#policy" class="c-text--medium">OUR POLICY</a>
+          </li>
+          <li class="p-headerSP__navItem">
+            <a href="#newArrival" class="c-text--medium">NEW ARRIVALS</a>
+          </li>
+          <li class="p-headerSP__navItem">
+            <a href="#access" class="c-text--medium">ACCESS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="p-hero">
+    <p><svg class="p-hero__caption" id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.62 37.16"><path d="M4.34,16.27H1.76V6.5H0V4.43H1.76V3.84A4.37,4.37,0,0,1,2.6,1.05C3.16.35,4.3,0,6,0L7,0v2.1l-.69,0a2.57,2.57,0,0,0-1.38.26A1,1,0,0,0,4.41,3a9.11,9.11,0,0,0-.07,1.46H7V6.5H4.34Z"/><path d="M13.56,16.51a4.66,4.66,0,0,1-4-1.89A7.1,7.1,0,0,1,8.17,10.3,6.38,6.38,0,0,1,9.7,5.93a5.11,5.11,0,0,1,4-1.75,5,5,0,0,1,3.91,1.7,6.37,6.37,0,0,1,1.53,4.42,6.35,6.35,0,0,1-1.59,4.51A5.26,5.26,0,0,1,13.56,16.51Zm.09-2.2q2.7,0,2.7-4a5.47,5.47,0,0,0-.65-2.87,2.16,2.16,0,0,0-2-1,2.25,2.25,0,0,0-2.05,1.08A5.48,5.48,0,0,0,11,10.34a5.18,5.18,0,0,0,.71,2.95A2.25,2.25,0,0,0,13.65,14.31Z"/><path d="M24.29,16.27H21.62V4.43H24V7.25a5,5,0,0,1,1.41-2.41,2.84,2.84,0,0,1,1.85-.76h.36V7A2.73,2.73,0,0,0,25,8.26a5.47,5.47,0,0,0-.67,2.52Z"/><path d="M46.12,16.27H35.73V.27H46V2.65H38.61V7h6V9.3h-6v4.48h7.51Z"/><path d="M54.76,16.27H51.83L46.9.27H50l3.66,12.26L57.36.27h2.41Z"/><path d="M72,16.27H61.58V.27H71.87V2.65H64.46V7h6V9.3h-6v4.48H72Z"/><path d="M86.93,16.27H83.88L81.4,9.69H77.34v6.58H74.46V.27H81.4a5.94,5.94,0,0,1,4.25,1.31A4.45,4.45,0,0,1,87,5,4.23,4.23,0,0,1,84.13,9.2ZM77.34,7.38h3.59a3.53,3.53,0,0,0,2.32-.65A2.26,2.26,0,0,0,84,4.92a2.14,2.14,0,0,0-.75-1.7,3.07,3.07,0,0,0-2.1-.65H77.34Z"/><path d="M96.32,16.27H93.26V9.52L87.81.27H91.3l3.8,6.6L98.73.27h2.77L96.32,9.52Z"/><path d="M108.82,16.51a5.83,5.83,0,0,1-5-2.39,9.58,9.58,0,0,1-1.78-5.91A9,9,0,0,1,104,2.37,6.1,6.1,0,0,1,109,0a5.91,5.91,0,0,1,4.93,2.35,9.4,9.4,0,0,1,1.81,5.88,9.11,9.11,0,0,1-1.88,6A6.16,6.16,0,0,1,108.82,16.51Zm0-2.32a3.32,3.32,0,0,0,2.64-1.29c.72-.86,1.08-2.42,1.08-4.67a8.8,8.8,0,0,0-.89-4.32,3,3,0,0,0-2.77-1.57q-3.7,0-3.7,6a8.3,8.3,0,0,0,.94,4.39A3,3,0,0,0,108.84,14.19Z"/><path d="M130.45,16.27h-2.8L121.58,6.05l-.45-.76-.44-.74V16.27h-2.32V.27h3.19l5.6,9.42,1,1.72V.27h2.27Z"/><path d="M144.36,16.27H134V.27h10.29V2.65h-7.41V7h6V9.3h-6v4.48h7.51Z"/><path d="M35,25.07,31.53,36.91h-2.4L27,28.61l-2.12,8.3H22.4L18.76,25.07h2.83l2.34,8,2-8h2.42l2.08,8,2.28-8Z"/><path d="M46.65,36.91H44V29.16a2.36,2.36,0,0,0-.54-1.76,1.73,1.73,0,0,0-1.24-.51,2.41,2.41,0,0,0-1.91.9,4.57,4.57,0,0,0-.78,3v6.14H36.84v-16h2.67v6.24A3.56,3.56,0,0,1,43,24.59c2.42,0,3.64,1.4,3.64,4.19Z"/><path d="M54.49,37.16a4.66,4.66,0,0,1-4-1.89A7.14,7.14,0,0,1,49.1,31a6.43,6.43,0,0,1,1.53-4.38,5.11,5.11,0,0,1,4-1.74,5,5,0,0,1,3.9,1.7A6.34,6.34,0,0,1,60.1,31a6.34,6.34,0,0,1-1.59,4.5A5.24,5.24,0,0,1,54.49,37.16ZM54.58,35q2.7,0,2.7-4a5.43,5.43,0,0,0-.65-2.86,2.16,2.16,0,0,0-2-1.05,2.25,2.25,0,0,0-2,1.08A5.53,5.53,0,0,0,51.93,31a5.16,5.16,0,0,0,.71,2.95A2.25,2.25,0,0,0,54.58,35Z"/><path d="M78.55,36.91H68.7v-16h3V34.3h6.81Z"/><path d="M86.56,37.16a5.83,5.83,0,0,1-5-2.39,9.68,9.68,0,0,1-1.77-5.91A9,9,0,0,1,81.71,23a6.07,6.07,0,0,1,5-2.35A5.88,5.88,0,0,1,91.62,23a9.3,9.3,0,0,1,1.81,5.88,9.13,9.13,0,0,1-1.88,6A6.14,6.14,0,0,1,86.56,37.16Zm0-2.32a3.29,3.29,0,0,0,2.63-1.29q1.08-1.29,1.08-4.68a8.74,8.74,0,0,0-.89-4.32A3,3,0,0,0,86.65,23q-3.7,0-3.71,6a8.27,8.27,0,0,0,1,4.39A3,3,0,0,0,86.59,34.84Z"/><path d="M102.27,36.91H99.34l-4.94-16h3l3.67,12.26,3.75-12.26h2.4Z"/><path d="M119.48,36.91H109.09v-16h10.29v2.38H112v4.34h6V30h-6v4.48h7.51Z"/><path d="M120.29,33.06l2.8-.6c.34,1.58,1.63,2.38,3.87,2.38a4,4,0,0,0,2.36-.61,1.83,1.83,0,0,0,.83-1.51,2.15,2.15,0,0,0-.38-1.22,2.68,2.68,0,0,0-1.6-.87l-3.06-.8a7.37,7.37,0,0,1-2.32-.93,3.67,3.67,0,0,1-1.2-1.47,4.54,4.54,0,0,1-.46-2,4.23,4.23,0,0,1,1.6-3.44,6.27,6.27,0,0,1,4.08-1.29,7.46,7.46,0,0,1,3.68.9,4.07,4.07,0,0,1,2.07,2.56l-2.74.68a2.76,2.76,0,0,0-3-1.82,3.27,3.27,0,0,0-2,.56A1.76,1.76,0,0,0,124.1,25c0,.92.74,1.56,2.23,1.92l2.71.68a5.57,5.57,0,0,1,3.32,1.84,4.59,4.59,0,0,1,.84,2.67,4.41,4.41,0,0,1-1.77,3.71,7.33,7.33,0,0,1-4.6,1.36,8.49,8.49,0,0,1-4.17-1A4.88,4.88,0,0,1,120.29,33.06Z"/><path d="M151.52,36.91h-9.84v-16h3V34.3h6.81Z"/><path d="M156.53,36.91h-2.89v-16h2.89Z"/><path d="M163,36.91h-3v-16h10.11v2.48H163v4.37h5.62v2.4H163Z"/><path d="M182.62,36.91H172.23v-16h10.29v2.38h-7.41v4.34h5.95V30h-5.95v4.48h7.51Z"/></svg></p>
+    <div class="p-hero__scroll">
+      <span class="p-hero__arrow"></span>
+    </div>
+  </div>
+  <div class="l-wrap__content">
+    <section class="p-pickup" id="pickup">
+      <h2 class="c-title c-text--medium">PICK UP</h2>
+      <ul class="p-pickup__slider" id="slide">
+        <li>
+          <a href="index.html"><img src="assets/images/UNAIT_pickup_01.jpg" alt="pickupIMG_01"></a>
+        </li>
+        <li>
+          <a href="index.html"><img src="assets/images/UNAIT_pickup_02.jpg" alt="pickupIMG_02"></a>
+        </li>
+        <li>
+          <a href="index.html"><img src="assets/images/UNAIT_pickup_03.jpg" alt="pickupIMG_03"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="p-policy" id="policy">
+      <h2 class="c-title c-text--medium">OUR POLICY</h2>
+      <p class="p-policy__text c-text--small">
+        UNAIT's products are made from <br>
+        100% organic materials and are <br>
+        made with the environment in mind.
+      </p>
+      <p class="p-policy__text c-text--small">
+        Our goal is to contribute to a society <br>
+        where all people can enjoy fashion <br>
+        in a sustainable manner.
+      </p>
+    </section>
+    <section class="p-newArrival" id="newArrival">
+      <h2 class="c-title c-text--medium">NEW ARRIVALS</h2>
+      <ul class="p-newArrival__tabs" id="js-shuffle-btn">
+        <li class="p-newArrival__tabItem" data-group="all">
+          <p class="c-text--small">ALL</p>
+        </li>
+        <li class="p-newArrival__tabItem" data-group="t-shirts">
+          <p class="c-text--small">T-SHIRTS</p>
+        </li>
+        <li class="p-newArrival__tabItem" data-group="shoes">
+          <p class="c-text--small">SHOES</p>
+        </li>
+        <li class="p-newArrival__tabItem" data-group="accessories">
+          <p class="c-text--small">ACCESSORIES</p>
+        </li>
+      </ul>
+      <ul class="p-newArrival__products" id="js-shuffle-list">
+        
+        
+        <li class="p-newArrival__productsItem" data-groups=[&quot;t-shirts&quot;]>
+          <a href="index.html"><img src="assets/images/UNAIT_t-shirts_blue.png" alt=t-shirts blue></a>
+          <button class="p-newArrival__detail"><p class="c-text--xsmall">VIEW in SHOP</p></button>
+        </li>
+        
+        <li class="p-newArrival__productsItem" data-groups=[&quot;t-shirts&quot;]>
+          <a href="index.html"><img src="assets/images/UNAIT_t-shirts_green.png" alt=t-shirts green></a>
+          <button class="p-newArrival__detail"><p class="c-text--xsmall">VIEW in SHOP</p></button>
+        </li>
+        
+        <li class="p-newArrival__productsItem" data-groups=[&quot;t-shirts&quot;]>
+          <a href="index.html"><img src="assets/images/UNAIT_t-shirts_purple.png" alt=t-shirts purple></a>
+          <button class="p-newArrival__detail"><p class="c-text--xsmall">VIEW in SHOP</p></button>
+        </li>
+        
+        <li class="p-newArrival__productsItem" data-groups=[&quot;shoes&quot;]>
+          <a href="index.html"><img src="assets/images/UNAIT_shoes_blue.png" alt=shoes blue></a>
+          <button class="p-newArrival__detail"><p class="c-text--xsmall">VIEW in SHOP</p></button>
+        </li>
+        
+        <li class="p-newArrival__productsItem" data-groups=[&quot;shoes&quot;]>
+          <a href="index.html"><img src="assets/images/UNAIT_shoes_black.png" alt=shoes black></a>
+          <button class="p-newArrival__detail"><p class="c-text--xsmall">VIEW in SHOP</p></button>
+        </li>
+        
+        <li class="p-newArrival__productsItem" data-groups=[&quot;accessories&quot;]>
+          <a href="index.html"><img src="assets/images/UNAIT_accessories_gold.png" alt=accessories gold></a>
+          <button class="p-newArrival__detail"><p class="c-text--xsmall">VIEW in SHOP</p></button>
+        </li>
+        
+      </ul>
+      <div class="p-newArrival__viewBox">
+        <button class="p-newArrival__view">
+          <p class="p-newArrival__viewText c-text--small">VIEW ALL PRODUCTS</p>
+        </button>
+      </div>
+    </section>
+    <section class="p-access" id="access">
+      <h2 class="c-title c-text--medium">ACCESS</h2>
+      <table class="p-access__table">
+        <tr><td class="p-access__text c-text--small">UNAIT.inc</td></tr>
+        <tr><td class="p-access__text c-text--small">11xx Station St, Vancouver, BC</td></tr>
+        <tr><td class="p-access__text c-text--small">(604) xxx-xxxx</td></tr>
+      </table>
+      <div class="p-access__map">
+        <iframe class="p-access__mapInner" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.1603215515247!2d-123.10075168402967!3d49.27335927935174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671668200e3a1%3A0x74b7711bd990eb!2zU3RhdGlvbiBTdCwgVmFuY291dmVyLCBCQywg44Kr44OK44OA!5e0!3m2!1sja!2sjp!4v1614449298925!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+    <footer class="p-footer">
+      <p class="c-text--xsmall">copyrights 2021 UNAIT</p>
+    </footer>
+  </div>
+</div>
+
+<script>
+  $(function() {
+    //set content on position
+    var windowHeight = $(window).height(),
+        $content = $(".l-wrap__content");
+
+    $content.css("transform", "translateY("+windowHeight+"px)");
+
+    //scroll header
+    $(window).scroll(function() {
+      var $this = $(this),
+          $headerPC = $(".p-headerPC")
+
+      $headerPC.removeClass("is-scroll");
+
+      if($this.scrollTop() > 0) {
+        $headerPC.addClass("is-scroll");
+      }
+    });
+
+    //click hamburger
+    var $hamburger = $(".p-headerSP__hamburger"),
+        $hamBar = $(".p-headerSP__hamBar"),
+        $spNav = $(".p-headerSP__nav");
+
+    $hamburger.on("click", function() {
+      if($(this).hasClass("is-active")) {
+        $(this).removeClass("is-active");
+        $hamBar.removeClass("is-active");
+        $spNav.removeClass("is-active");
+      } else {
+        $(this).addClass("is-active");
+        $hamBar.addClass("is-active");
+        $spNav.addClass("is-active");
+      }
+    });
+
+    //smooth scroll
+    $('a[href^="#"]').click(function() {
+      var adjust = 0;
+      var speed = 500;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top + adjust;
+
+      $hamburger.removeClass("is-active");
+      $hamBar.removeClass("is-active");
+      $spNav.removeClass("is-active");
+
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+
+    //slick
+    $("#slide").slick({
+      autoplay: false,
+      dots: true,
+      arrows: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+
+    //click tab
+    var $tab = $(".p-newArrival__tabItem");
+
+    $tab.on("click", function() {
+      $tab.removeClass("is-active");
+      $(this).addClass("is-active");
+    });
+  });
+</script>
+
+<script>
+  //shuffle.js
+  $(function() {
+    $('#js-shuffle-btn li').on('click', function() {
+			var $this = $(this),
+          $grid = $('#js-shuffle-list');
+
+      $('#js-shuffle-btn .active').removeClass('active');
+      $('#js-shuffle-btn .is-tab-active').removeClass('is-tab-active');
+      $this.addClass('active');
+      $this.addClass('is-tab-active');
+			$grid.shuffle($this.data('group'));
+    });
+  });
+</script>
+
+<script type="text/javascript" src="assets/javascripts/bundleaace561030ff3fac503c.js"></script></body>
+</html>
