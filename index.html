@@ -6,7 +6,6 @@
 <meta name="description" content="UNAIT is an apparel brand based inVancouver, Canada that offers fashion for everyone who enjoys life!" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" href="./assets/images/fav.png" />
 
 <title>UNAIT</title>
 
@@ -23,13 +22,15 @@
 <!-- Google Fonts Roboto -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link href="assets/stylesheets/bundleaace561030ff3fac503c.css" rel="stylesheet"></head>
+<link href="assets/stylesheets/bundleeca32b4f4abfe4d75c00.css" rel="stylesheet"></head>
 <body>
+
+
 <div class="l-wrap">
   <header>
     <div class="p-headerPC">
       <div class="p-headerPC__logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.82 24.33" width="88"><path d="M0,.93H3.06V14.7a6.91,6.91,0,0,0,1.47,4.72,5.2,5.2,0,0,0,4.15,1.67,5.53,5.53,0,0,0,4.16-1.53,6,6,0,0,0,1.49-4.34V.93h3V15A9.16,9.16,0,0,1,15,21.59a8.25,8.25,0,0,1-6.25,2.46,8.47,8.47,0,0,1-6.39-2.5C.8,19.89,0,17.43,0,14.19Z"/><path d="M21.67,0,38.23,17V.9h3.06V24.33L24.73,7.38V23.29H21.67Z"/><path d="M54.22,0,64.79,23.29h-3.2L59,17.56h-9.5l-2.57,5.73H43.73Zm0,7-3.58,8h7.2Z"/><path d="M67.55.9h3V23.29h-3Z"/><path d="M74.13.9H87.82V4H82.48V23.29h-3V4H74.13Z"/></svg>
+        <svg id="レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.82 24.33" width="88"><path d="M0,.93H3.06V14.7a6.91,6.91,0,0,0,1.47,4.72,5.2,5.2,0,0,0,4.15,1.67,5.53,5.53,0,0,0,4.16-1.53,6,6,0,0,0,1.49-4.34V.93h3V15A9.16,9.16,0,0,1,15,21.59a8.25,8.25,0,0,1-6.25,2.46,8.47,8.47,0,0,1-6.39-2.5C.8,19.89,0,17.43,0,14.19Z"/><path d="M21.67,0,38.23,17V.9h3.06V24.33L24.73,7.38V23.29H21.67Z"/><path d="M54.22,0,64.79,23.29h-3.2L59,17.56h-9.5l-2.57,5.73H43.73Zm0,7-3.58,8h7.2Z"/><path d="M67.55.9h3V23.29h-3Z"/><path d="M74.13.9H87.82V4H82.48V23.29h-3V4H74.13Z"/></svg>
       </div>
       <nav class="p-headerPC__nav">
         <ul class="p-headerPC__navList">
@@ -190,15 +191,22 @@
 
     $content.css("transform", "translateY("+windowHeight+"px)");
 
-    //scroll header
+    //scroll
     $(window).scroll(function() {
       var $this = $(this),
-          $headerPC = $(".p-headerPC")
+          $headerPC = $(".p-headerPC"),
+          $hero = $(".p-hero"),
+          $newArrival = $(".p-newArrival");
 
       $headerPC.removeClass("is-scroll");
+      $hero.removeClass("isHidden");
 
       if($this.scrollTop() > 0) {
         $headerPC.addClass("is-scroll");
+      }
+
+      if($this.scrollTop() > $newArrival.offset().top) {
+        $hero.addClass("isHidden");
       }
     });
 
@@ -270,5 +278,5 @@
   });
 </script>
 
-<script type="text/javascript" src="assets/javascripts/bundleaace561030ff3fac503c.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundleeca32b4f4abfe4d75c00.js"></script></body>
 </html>
